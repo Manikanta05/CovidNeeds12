@@ -144,8 +144,13 @@
 			<input type="hidden" name="form" value="listreqoperation">
           <button  type="submit" class="ml-5 mt-2 btn btn-lg btn-info" ><a href="#"></a>Track Requests</button>
           </form>
+          <div class="mt-4 ml-4 col-lg-3 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://cdn1.iconfinder.com/data/icons/happy-doctor/238/happy-doctor-007-512.png" class="img-fluid animated" alt="">
+        </div>
       </div>
       </div>
+      
+      
     </section>
 
   </main><!-- End #main -->

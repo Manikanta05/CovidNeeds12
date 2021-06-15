@@ -99,10 +99,10 @@
     </section><!-- End Breadcrumbs -->
 <div class="container">
       <% String name = (String)request.getAttribute("name");String email = (String)request.getAttribute("email");String type = (String)request.getAttribute("type"); %> 
- <h2 class="ml-4 display-4">Welcome <b><%=name %></b> <br></h2>
+ <h2 class="ml-4 display-4">Welcome <b><%=name %></b><hr> <br></h2>
         <div class="row">
           <div class="col col-md-4"> 
-           <h4 class="ml-5"> Accept Requests here...</h4>
+           <h4 class="ml-5"> Accept Requests here...</h4><br>
             <div class=" form-group">
               <form action="${pageContext.request.contextPath}/operation" method="POST" >                
 						<input type="hidden" name="name" value=<%=name %>>
@@ -115,7 +115,7 @@
           </div>
             
         
-        <div class="col col-md-6">
+        <div class="col col-md-4">
          <h4 class="ml-5"> View Accepted Requests here...</h4>
           <form action="${pageContext.request.contextPath}/operation?page=home" method="POST">
           <input type="hidden" name="name" value=<%=name %>>
@@ -125,6 +125,9 @@
           <button  type="submit" class="ml-5 mt-2 btn btn-lg btn-info" ><a href="#"></a>GO</button>
           </form>
       </div>
+       <div class="col-md-4 order-1 order-lg-2 hero-img" style="margin-top: -5% "data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://cdn1.iconfinder.com/data/icons/happy-doctor/238/happy-doctor-007-512.png" class="img-fluid animated" alt="">
+        </div>
       </div>
     </section>
 
