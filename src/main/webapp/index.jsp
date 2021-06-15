@@ -298,7 +298,7 @@ Our website supplies necessities such as free beds, oxygen cylinders, plasma and
             <div class="icon-box">
               <div class="icon"><span class="iconify" data-icon="bx-bx-donate-blood" data-inline="false" style="color: #0dcaf0;" data-width="35" data-height="35"></span></div>
               <h4><a href="">Plasma</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p>The plasma contains antibodies that can help the patient fight the deadly pathogens infiltrating their immune system, which in turn speeds up their recovery process.</p>
             </div>
           </div>
 
