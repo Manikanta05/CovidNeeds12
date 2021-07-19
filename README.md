@@ -1,4 +1,6 @@
-# CovidNeeds12
-After changes `update here....!`
+# CovidNeeds
 
-To run add this into project set and use `TOMCAT 9`
+The website which supplies necessities such as medical kit, Oxygen cylinders, free beds, and much more to the needy.
+
+<code>Built Using Java Servlets.</code>
+
