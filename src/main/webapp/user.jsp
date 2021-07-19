@@ -46,7 +46,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Covid Needs</a></h1>
+      <h1 class="logo me-auto"><a href="${pageContext.request.contextPath}/">Covid Needs</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
@@ -90,7 +90,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="${pageContext.request.contextPath}/">Home</a></li>
           <li>User</li>
         </ol>
         <h2>User</h2>
@@ -136,7 +136,7 @@
             
         
         <div class="col col-lg-8">
-          <h2 class="ml-4 display-4">Welcome <b><%=name %></b> <br></h2><h4 class="ml-5"> Track your Requests here...</h4>
+          <h2 class="ml-4 display-4">Welcome <b><%=name.toUpperCase() %></b> <br></h2><h4 class="ml-5"> Track your Requests here...</h4>
           <form action="${pageContext.request.contextPath}/operation?page=home" method="POST">
           <input type="hidden" name="name" value=<%=name %>>
 			<input type="hidden" name="email" value=<%=email%>>

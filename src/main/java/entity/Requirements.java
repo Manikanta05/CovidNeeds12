@@ -68,7 +68,7 @@ public class Requirements {
 		public Requirements(String name, String email, String id, String type, String rtype, String comment,
 				String ogname, String ogemail, String status) {
 			
-			this.name = name;
+			this.name = name;//9
 			this.email = email;
 			this.id = id;
 			this.type = type;
@@ -85,21 +85,30 @@ public class Requirements {
 					+ status + "]";
 		}
 		public Requirements(String name, String email, String type) {
-			this.name = name;
+			this.name = name;//3
 			this.email = email;
 			this.type = type;
 		}
 		public Requirements(String name, String rtype, String ogname, String status) {
-			super();
-			this.name = name;
+			
+			this.name = name;//4
 			this.rtype = rtype;
 			this.ogname = ogname;
+			this.status = status;
+		}
+public Requirements(String name, String rtype,String comment, String ogname,String ogemail, String status) {
+			
+			this.name = name;//4
+			this.rtype = rtype;
+			this.comment = comment;
+			this.ogname = ogname;
+			this.ogemail = ogemail;
 			this.status = status;
 		}
 		public Requirements(String name, String email, String type, String rtype, String comment, String ogname,
 				String ogemail, String status) {
 			
-			this.name = name;
+			this.name = name;//8
 			this.email = email;
 			this.type = type;
 			this.rtype = rtype;
@@ -109,7 +118,7 @@ public class Requirements {
 			this.status = status;
 		}
 		public Requirements(String name, String email, String type, String rtype, String comment) {
-			this.name = name;
+			this.name = name;//5
 			this.email = email;
 			this.type = type;
 			this.rtype = rtype;
@@ -117,7 +126,7 @@ public class Requirements {
 		}
 		public Requirements(String name, String email, String type, String rtype, String ogname, String ogemail,
 				String status) {
-			
+			//7
 			this.name = name;
 			this.email = email;
 			this.type = type;

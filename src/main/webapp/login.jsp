@@ -90,7 +90,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="${pageContext.request.contextPath}/">Home</a></li>
           <li>Login</li>
         </ol>
         <h2>Login</h2>

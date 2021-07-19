@@ -46,7 +46,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Covid Needs</a></h1>
+      <h1 class="logo me-auto"><a href="${pageContext.request.contextPath}/">Covid Needs</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
@@ -90,7 +90,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="${pageContext.request.contextPath}/">Home</a></li>
           <li>Organisation</li>
         </ol>
         <h2>Organisation</h2>
@@ -99,7 +99,7 @@
     </section><!-- End Breadcrumbs -->
 <div class="container">
       <% String name = (String)request.getAttribute("name");String email = (String)request.getAttribute("email");String type = (String)request.getAttribute("type"); %> 
- <h2 class="ml-4 display-4">Welcome <b><%=name %></b><hr> <br></h2>
+ <h2 class="ml-4 display-4">Welcome <b><%=name.toUpperCase() %></b><hr> <br></h2>
         <div class="row">
           <div class="col col-md-4"> 
            <h4 class="ml-5"> Accept Requests here...</h4><br>

@@ -82,7 +82,7 @@ public class ReqModel {
 			
 			while(rs.next()){
 				//System.out.println(rs.getString("name")+ rs.getString("email")+rs.getString("type")+rs.getString("rtype")+rs.getString("comment")+rs.getString("status"));
-				lr.add(new Requirements(rs.getString("name"),rs.getString("email"),rs.getString("type"),rs.getString("rtype"),rs.getString("ogname"),rs.getString("ogemail"),rs.getString("status")));
+				lr.add(new Requirements(rs.getString("name"),rs.getString("email"),rs.getString("type"),rs.getString("rtype"),rs.getString("comment"),rs.getString("ogname"),rs.getString("ogemail"),rs.getString("status")));
 			}	
 		} catch (SQLException e) {
 			e.printStackTrace();

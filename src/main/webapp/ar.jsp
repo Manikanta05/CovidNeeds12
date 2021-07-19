@@ -51,7 +51,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Covid Needs</a></h1>
+      <h1 class="logo me-auto"><a href="${pageContext.request.contextPath}/">Covid Needs</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
@@ -95,7 +95,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="${pageContext.request.contextPath}/">Home</a></li>
           <li>Organization</li>
           <li>List of Requirements</li>
         </ol>
@@ -110,6 +110,7 @@
 			<thead>
 			<th>Name</th>
 			<th>Requirement</th>
+			<th>Remarks</th>
 			<th>Organization name</th>
 			<th>Status</th>
 			<th>Accept</th>
@@ -142,6 +143,7 @@
 				out.print("<tr>");
 				out.print("<td>"+i.getName()+"</td>");
 				out.print("<td>"+i.getRtype()+"</td>");
+				out.print("<td>"+i.getComment()+"</td>");
 				out.print("<td>"+i.getOgname()+"</td>");
 				out.print("<td>"+i.getStatus()+"</td>");
 				updateURL = request.getContextPath() + "/operation?page=updateReq" + 
